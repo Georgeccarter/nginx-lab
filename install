@@ -9,4 +9,7 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 # Displays whether Nginx is running, along with log messages and uptime. This confirms the service started successfully.
 sudo systemctl status nginx
-# 
+# Sends a request to the Nginx server and displays the response headers. A 200 OK indicates the server is functioning correctly
+curl -I http://localhost
+# Loads the default Nginx web page, confirming that the server is reachable via HTTP.
+http://localhost
