@@ -5,3 +5,8 @@ sudo apt update
 sudo apt install -y nginx
 # Launches the Nginx service so it begins serving web content immediately.
 sudo systemctl start nginx
+# Configures Nginx to automatically start whenever Kali boots, ensuring your web server is always available.
+sudo systemctl enable nginx
+# Displays whether Nginx is running, along with log messages and uptime. This confirms the service started successfully.
+sudo systemctl status nginx
+# 
