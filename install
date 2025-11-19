@@ -1,0 +1,7 @@
+# Run the following:
+# Refreshes Kali’s package index to ensure you download the latest available versions of all software, including Nginx.
+sudo apt update
+# Downloads and installs the Nginx web server along with all required dependencies. The -y flag auto-confirms the installation.
+sudo apt install -y nginx
+# Launches the Nginx service so it begins serving web content immediately.
+sudo systemctl start nginx
